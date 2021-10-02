@@ -1,1 +1,3 @@
 # Curso_Platzi
+...
+## Calculando figuras geometricas en JavaScript
