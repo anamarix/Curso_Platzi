@@ -36,12 +36,29 @@ console.group("Triángulos");
 function perimetroTriangulo(lado1, lado2, base) {
   return lado1 + lado2 + base;
 }
-// console.log("El perímetro del triángulo es: " + perimetroTriangulo + "cm");
+ console.log("El perímetro del triángulo es: " + perimetroTriangulo + "cm");
 
 function areaTriangulo(base, altura) {
   return (base * altura) / 2;
 }
 console.log("El área del triángulo es: " + areaTriangulo + "cmˆ2");
+
+function longitudTrianguloIsosceles(){
+  const input1 = document.getElementById("lado1")
+  const lado1 = input1.value;
+  const input2 = document.getElementById("lado2")
+  const lado2 = input2.value;
+  const input3 = document.getElementById("base")
+  const base = input3.value;
+if(lado1===lado2 && lado1===base){
+const longitud = lado1/2*Math.sqrt(3);
+const longitudToFixed = longitud.toFixed(2);
+alert(longitudToFixed);
+}
+else {
+  alert("Este triangulo no es isosceles!")
+}
+}
 
 console.groupEnd();
 
