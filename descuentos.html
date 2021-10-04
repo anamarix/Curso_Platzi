@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos / Curso de Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Porcentajes y descuentos
+        </h1> 
+        <p> Este es el segundo taller del Curso Platzi</p>   
+    </header>
+    <section>
+        <h2>
+            Calcula el precio a pagar de tus productos con descuento
+        </h2>
+
+        <form>
+            <label for="InputPrice" >Escribe el precio de tu producto: </label>
+            <input id="InputPrice" type="number"/>
+
+            <label for="InputDiscount">Escribe el descuento de tu producto: </label>
+            <input id="InputDiscount" type="number" />
+            <button type="button" onclick="onClickButtonPrice()">
+                Calcular el precio con descuento
+            </button>
+
+            <p id="ResultPrice"></p>
+        </form>
+    </section>
+    <section>
+        <h2>Tienes un coupon? </h2>
+        <form>
+            <label for="InputCoupon">Escribe el codigo de tu coupon: </label>
+            <input id = "InputCoupon" type="text"/>
+            <button type="button" onclick="onClickCouponDiscount()">Calcular el descuento con tu coupon</button>
+            <p id="ResultCoupon"></p>
+        </form>
+
+    </section>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
